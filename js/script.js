@@ -26,6 +26,10 @@ buttonPlay.addEventListener('click', function () {
             cpuArrayNumber.push(randomNumber);
         }
     }
+    // se il numero che clicca l'utente è presente nell'array casuale termina il gioco e la casella si colora di rosso 
+    // altrimenti continua il gioco la cella si colora di rosso 
+    // il gioco termina quando nella griglia restano solo bombe 
+
 });
 
 
