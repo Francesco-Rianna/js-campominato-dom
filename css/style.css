@@ -1,0 +1,29 @@
+.ms-grid {
+    max-width: 600px;
+    height: 600px;
+    background-color: blueviolet;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+.ms-square {
+    width: calc(100%/10);
+    height: calc(100%/10);
+    border: 1px solid black;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ms-bg-square {
+    background-color: skyblue;
+}
+
+.ms-img-bool {
+    width: 130px;
+}
