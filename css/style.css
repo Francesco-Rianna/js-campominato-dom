@@ -24,6 +24,10 @@
     background-color: skyblue;
 }
 
+.ms-bg-square-red {
+    background: red;
+}
+
 .ms-img-bool {
     width: 130px;
 }

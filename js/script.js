@@ -17,6 +17,7 @@ buttonPlay.addEventListener('click', function () {
     for (let i = 1; i <= 100; i++) {
         const newSquare = generateSquare(i);
         gridContainer.append(newSquare);
+
     }
 
     // Genera 16 numeri casuali unici per cpuArrayNumber
@@ -27,6 +28,7 @@ buttonPlay.addEventListener('click', function () {
         }
     }
     // se il numero che clicca l'utente è presente nell'array casuale termina il gioco e la casella si colora di rosso 
+
     // altrimenti continua il gioco la cella si colora di rosso 
     // il gioco termina quando nella griglia restano solo bombe 
 
@@ -34,7 +36,7 @@ buttonPlay.addEventListener('click', function () {
 
 
 
-
+let bombsRemaining = cpuArrayNumber
 
 function generateSquare(number) {
     // creo l'elemento del dom
@@ -48,6 +50,14 @@ function generateSquare(number) {
 
         newSquare.classList.toggle('ms-bg-square');
         console.log(number);
+        // se il numero che clicca l'utente è presente nell'array casuale termina il gioco e la casella si colora di rosso 
+        if (cpuArrayNumber.includes(number)) {
+            newSquare.classList.remove('ms-bg-square')
+            newSquare.classList.add('ms-bg-square-red')
+            alert('hai perso')
+        }
+
+
 
 
     })
